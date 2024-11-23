@@ -12,10 +12,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewPager: ViewPager2
     private lateinit var bottomNavigationView: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
+        super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
         // Initialize views
         viewPager = binding.viewPager
@@ -45,5 +44,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
+
+        setContentView(binding.root)
     }
 }
